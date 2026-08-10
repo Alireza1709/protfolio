@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  
+
+    --color-c1: #FD853A;
+    --color-c2: #344054;
+    --color-c3: #475467;
+    --color-c4: #151515;
+    --color-c5: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #344054;
+  }
+}
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+   font-family: var(--font-lufga);
+}
+
+.font-urbanist {
+  font-family: var(--font-urbanist);
+}
+
+
+
+
+
+
+
+
+
+
+
+.custom-slider-pagination {
+  position: static;
+}
+
+.custom-slider-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px !important;
+  background-color: #ffffff;
+  opacity: 0.4;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.custom-slider-pagination .swiper-pagination-bullet-active {
+  width: 28px;
+  opacity: 1;
+  background-color: #f97316;
+}
+
+
+
+
+
+
+
+
+/* services animation */
+
+
+/* انیمیشن حرکت به پایین - نرم و کند */
+@keyframes move-down {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30% {
+    transform: translateY(60px) rotate(4deg);
+  }
+  60% {
+    transform: translateY(45px) rotate(3deg);
+  }
+  85% {
+    transform: translateY(55px) rotate(3.5deg);
+  }
+  100% {
+    transform: translateY(50px) rotate(3deg);
+  }
+}
+
+/* انیمیشن برگشت به بالا - نرم و کند */
+@keyframes move-up {
+  0% {
+    transform: translateY(50px) rotate(3deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(1deg);
+  }
+  60% {
+    transform: translateY(35px) rotate(2deg);
+  }
+  85% {
+    transform: translateY(5px) rotate(0.5deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+.animate-move-down {
+  animation: move-down 4s ease-in-out forwards;
+}
+
+.animate-move-up {
+  animation: move-up 3.5s ease-in-out forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes switch-active {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes switch-icon {
+  from {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
