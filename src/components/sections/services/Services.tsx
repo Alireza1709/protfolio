@@ -17,7 +17,6 @@ const Services = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="absolute inset-0 md:rounded-[50px] overflow-hidden">
-        {/* پس‌زمینه */}
         <div 
           className="absolute inset-0 bg-[url('/images/blackbg.webp')] bg-cover bg-center bg-no-repeat"
         >
