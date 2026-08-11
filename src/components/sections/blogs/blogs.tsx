@@ -6,8 +6,8 @@ import { blogData } from "./blog-data";
 
 const Blogs = () => {
   return (
-    <section className="my-20 w-full">
-      <div className="container mx-auto px-4">
+    <section className="my-20 w-full  ">
+      <div className="container mx-auto px-4 ">
             <div
                 className=" mb-10 flex flex-col gap-6 sm:mb-12 flex-row items-center justify-between w-full"
                 >
