@@ -12,16 +12,18 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="w-full relative overflow-hidden  max-w-[2000px] mx-auto h-[800px] max-xl:h-[800px] max-lg:h-[750px] max-md:h-[700px] max-sm:h-[650px] bg-[url('/images/blackbg.webp')] bg-cover bg-center bg-no-repeat -mt-65 max-xl:mt-3 max-lg:mt-8 max-md:mt-15 max-sm:mt-22"
+      className="w-full relative overflow-hidden max-w-[2000px] mx-auto h-[800px] max-xl:h-[800px] max-lg:h-[750px] max-md:h-[700px] max-sm:h-[650px] bg-[url('/images/blackbg.webp')] bg-cover bg-center bg-no-repeat -mt-65 max-xl:mt-3 max-lg:mt-8 max-md:mt-15 max-sm:mt-22"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
+      <div className="absolute inset-0 bg-black/50" />
 
-      <div className="absolute inset-0 bg-black/50  " />
-      {/* Service Image 1 - حرکت به پایین با ease-in-out */}
+      {/* Service Image 1 - حرکت به پایین با حالت کشسانی */}
       <div
-        className={`absolute  -left-30 top-20 z-0 rotate-160 transition-transform duration-[600ms] ease-in-out ${
-          isHovered ? "-translate-y-[60px]" : "translate-y-0"
+        className={`absolute -left-30 max-md:-left-10 top-20 z-0 rotate-160 transition-transform duration-[1000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+          isHovered
+            ? "translate-y-[150px] rotate-180"
+            : "translate-y-0"
         }`}
       >
         <Image
@@ -43,10 +45,12 @@ const Services = () => {
         />
       </div>
 
-      {/* Service Image 2 - حرکت به راست با ease-in-out */}
+      {/* Service Image 2 - حرکت به راست با حالت کشسانی */}
       <div
-        className={`absolute left-1/2 top-20 z-0 transition-transform duration-[600ms] ease-in-out ${
-          isHovered ? "translate-x-[70px]" : "translate-x-0"
+        className={`absolute left-1/2 top-20 z-0 transition-transform duration-[2.5s] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
+          isHovered
+            ? "translate-x-[100px] rotate-90"
+            : "translate-x-0"
         }`}
       >
         <Image
@@ -68,9 +72,9 @@ const Services = () => {
         />
       </div>
 
-      {/* Service Image 3 - حرکت به بالا و راست با ease-in-out */}
+      {/* Service Image 3 - حرکت به بالا و راست با حالت کشسانی */}
       <div
-        className={`absolute right-0 top-73 max-sm:top-110 z-0 transition-transform duration-[600ms] ease-in-out ${
+        className={`absolute right-0 top-73 max-sm:top-110 z-0 transition-transform duration-[2.5s] ease-[cubic-bezier(0.34,1.56,0.64,1)] ${
           isHovered
             ? "translate-x-[30px] -translate-y-[30px]"
             : "translate-x-0 translate-y-0"
