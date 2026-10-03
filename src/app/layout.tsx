@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 
 const lufga = localFont({
   src: [
-    {
-      path: "../assets/fonts/lufga/Lufga-regular.otf",
-      weight: "400",
-      style: "normal",
-    },
+    // {
+    //   path: "../assets/fonts/lufga/Lufga-regular.otf",
+    //   weight: "400",
+    //   style: "normal",
+    // },
     {
       path: "../assets/fonts/lufga/Lufga-medium.otf",
       weight: "500",
