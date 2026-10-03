@@ -22,7 +22,7 @@ const lufga = localFont({
       style: "normal",
     },
     {
-      path: "../assets/fonts/lufga/Lufga-Semibold.otf",
+      path: "../assets/fonts/lufga/Lufga-SemiBold.otf",
       weight: "600",
       style: "normal",
     },
